@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A basic survey form.">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="submitpage" href="submit.html">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="main-heading">Survey Form</h1>
+            <hr>
+            
+            <form class="form-class" action="submit.html" method="get">
+
+                <div class="form-control">
+                <h2 class="heading-field">Customer Name:</h2>
+                </div>
+                
+
+                <div class="field-inputs">
+                    <div class="input-div">
+
+                <label class="required-after" for="fname">First Name</label>
+                <input class="form-control-input" id="fname" name="fname" type="text" placeholder="John" required>
+                <label for="lname">Last Name</label>
+                <input class="form-control-input" id="lname" name="lname" type="text">
+
+                    </div>
+                </div>
+                
+                <div class="form-control">
+                    <div class="heading-field">
+                        <h2>Address:</h2>
+                    </div>
+                    
+                    <div>
+                        <div class="input-div">
+                            <label for="streetaddress">Street Address</label>
+                            <input class="form-control-input" id="streetaddress" name="streetaddress" type="text" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="input-div">
+                            <label for="streetaddress2">Street Address Line 2</label>
+                            <input class="form-control-input" id="streetaddress2" name="streetaddress2" type="text">
+                        </div>
+                    </div>
+
+                    <div class="field-inputs">
+                        <div class="input-div">
+                            <label for="city">City</label>
+                            <input class="form-control-input" id="city" name="city" type="text">
+                        </div>
+
+                        <div class="input-div">
+                            <label for="state">State</label>
+                            <input class="form-control-input" id="state" name="state" type="text">
+                        </div>
+
+                    </div>
+
+                    <div class="field-inputs">
+                        <div class="input-div">
+                            <label for="zip">ZIP</label>
+                            <input class="form-control-input" id="zip" name="zip" type="number" required>
+                        </div>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="country">Country</label>
+                        <select class="form-control-input" id="country" name="country" required>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Bagladesh">Bangladesh</option>
+                            <option value="London">UK</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <div class="form-control">
+                    <div class="heading-field">
+                        <h2>Contact:</h2>
+                    </div>
+
+                    <div class="field-inputs">
+                        <div class="input-div">
+                            <label for="phone">Phone</label>
+                            <input class="form-control-input" id="phone" name="phone" type="number" required>
+                        </div>
+
+                        <div class="input-div">
+                            <label for="email">Email</label>
+                            <input class="form-control-input" id="email" name="email" type="email" placeholder="username@gmail/yahoo.com">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-control">
+                    <div class="heading-field">
+                        <h2>Personal Details:</h2>
+                    </div>
+                    <div class="field-inputs">
+                        <div class="input-div">
+                            <fieldset class="fieldset-radio">
+                                <legend style="font-size: 1.5rem; font-style: normal;">Gender:</legend>
+                                <input id="male" name="male" type="radio">
+                                <label for="male">Male</label>
+                                <br>
+                                <input id="female" name="female" type="radio">
+                                <label for="female">Female</label>
+                                <br>
+                                <input id="others" name="others" type="radio">
+                                <label for="others">Others</label>
+                            </fieldset>
+                            <br>
+                            <fieldset class="fieldset-radio">
+                                <legend style="font-size: 1.5rem; font-style: normal;">Age:</legend>
+                                <select class="form-control-input">
+                                    <option value="1-10">1-10</option>
+                                    <option value="11-18">11-18</option>
+                                    <option value="19-40">19-40</option>
+                                    <option value="41-above">41-above</option>
+                                </select>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-control">
+                    <div class="heading-field">
+                        <h2>Field Of Interests:</h2>
+                    </div>
+                    <div class="input-div">
+                        <label class="fieldset-radio" for="cs">Computer Science</label>
+                        <input id="cs" name="cs" type="checkbox">
+                        <br>
+                        <label class="fieldset-radio" for="hr">Human Resource</label>
+                        <input id="hr" name="hr" type="checkbox">
+                        <br>
+                        <label class="fieldset-radio" for="literature">Literature</label>
+                        <input id="literature" name="literature" type="checkbox">
+                        <br>
+                        <label class="fieldset-radio" for="commerce">Commerce</label>
+                        <input id="commerce" name="commerce" type="checkbox">
+                        <br>
+                        <label class="fieldset-radio" for="other">Other</label>
+                        <input class="form-other-input" id="other" name="other" type="text">
+                    </div>
+                </div>
+                <br>
+                <button type="submit">Submit</button>
+
+
+            </form>
+
+        </div>
+    </body>
+</html>
