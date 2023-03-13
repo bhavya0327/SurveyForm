@@ -130,7 +130,7 @@
   width: 50%;
   color: #120c0c;
 }
-.required:after {
+.required-after {
   content:" *";
   color: red;
 }
